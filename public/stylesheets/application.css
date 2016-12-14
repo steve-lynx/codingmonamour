@@ -1,8 +1,49 @@
 
+html {
+    
+}
+
+body {
+    background-color: #FF89D4;
+    background-image: url(/images/bg-tissue.png);
+    background-position: 0px 0px;
+}
+
+.jumbotron.head {
+    background-color: #B0518D;
+    -webkit-box-shadow: -4px 3px 8px -4px rgba(0,0,0,0.90);
+    -moz-box-shadow: -4px 3px 8px -4px rgba(0,0,0,090);
+    box-shadow: -4px 3px 8px -4px rgba(0,0,0,0.90);
+}
+
+.jumbotron.head .container {
+    background-color: #B0518D;
+}
+
+.container {
+    background-color: #ffffff;
+    margin-top: -2em;
+}
+
 pre {
     border-radius: 0px;
 }
 
 img.img-full {
     width: 100%;
+}
+
+
+.heading-1 {
+    background-color: #B0518D;
+    height: 4em;
+    margin: 0em 0em 0em 0em;
+    text-align: center;
+    font-size: 6em;
+    padding-top: 1em;
+}
+
+p {
+    padding: 1.4em;
+    font-size: 1.4em;
 }
