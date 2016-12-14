@@ -1,0 +1,36 @@
+doctype html
+html class="no-js" lang="it" dir="ltr"
+
+  head
+    title Slim Examples
+
+    meta name="keywords" content="template language"
+    meta charset="utf-8"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel="stylesheet" href="/stylesheets/bootstrap.css"
+    link rel="stylesheet" href="/stylesheets/bootstrap-theme.css"
+    link rel="stylesheet" href="/javascripts/highlight/styles/ocean.css"    
+    link rel="stylesheet" href="/stylesheets/application.css"
+
+    
+  body
+
+    .jumbotron
+      .container
+        h1 Hello, world!
+
+    .container
+      .row
+        == yield
+
+    /div id="footer"
+    /  = render 'footer'
+    /  | Copyright © #{year} #{author}
+
+
+    script src="/javascripts/jquery-3.1.1.min.js"
+    script src="/javascripts/highlight/highlight.pack.js"
+    script src="/javascripts/bootstrap.js"
+    script src="/javascripts/application.js"
+
