@@ -4,8 +4,7 @@ get '/' do
   markdown(:index, :layout => :main)
 end
 
-get '*' do
-     
+get '*' do     
   begin
     markdown(params['splat'].join('/').to_sym, :layout => :main)
   rescue
