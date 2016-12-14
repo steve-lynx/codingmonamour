@@ -234,7 +234,7 @@ TASK LIST
 Image
 ------------------------------
 
-![example image](/images/example-image.png "An exemplary image")
+![example image](/images/example-image.png "An exemplary image"){: .img-full}
 
 Crazy linking action
 --------------------

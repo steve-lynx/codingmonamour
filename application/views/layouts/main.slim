@@ -2,9 +2,9 @@ doctype html
 html class="no-js" lang="it" dir="ltr"
 
   head
-    title Slim Examples
+    title Coding Mon Amour
 
-    meta name="keywords" content="template language"
+    meta name="keywords" content="coding, language, computational thinking"
     meta charset="utf-8"
     meta http-equiv="x-ua-compatible" content="ie=edge"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
@@ -18,15 +18,16 @@ html class="no-js" lang="it" dir="ltr"
 
     .jumbotron
       .container
-        h1 Hello, world!
+        h1 Coding Mon Amour
 
     .container
       .row
         == yield
 
-    /div id="footer"
-    /  = render 'footer'
-    /  | Copyright © #{year} #{author}
+    .jumbotron
+      .container.footer
+        footer
+
 
 
     script src="/javascripts/jquery-3.1.1.min.js"

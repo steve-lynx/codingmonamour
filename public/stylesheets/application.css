@@ -2,3 +2,7 @@
 pre {
     border-radius: 0px;
 }
+
+img.img-full {
+    width: 100%;
+}
