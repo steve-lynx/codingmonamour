@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec ruby ./config/boot.rb 
+bundle exec rackup --port 3000 --host 0.0.0.0
