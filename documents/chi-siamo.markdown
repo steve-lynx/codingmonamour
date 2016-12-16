@@ -14,7 +14,9 @@ Perché abbiamo scelto di concentrarci almeno inizialmente solo sul coding? Part
 
 La critica è facile, l'arte è difficile. Lo sappiamo: per questo, oltre ad un'analisi della proposta del coding sullo sfondo della situazione Italiana, vorremmo fare anche una proposta articolata prendendo in considerazione le differenti prospettive: tecniche, pedagogiche, etiche, economiche.
 
-![example image](/images/film-2.jpg "An exemplary image"){: .img-full}
+![Hiroshima Mon Amour](/images/film-2.jpg "Hiroshima Mon Amour")
+{: .img-full}
+
 
 # Alcune questioni preliminari
 {: .heading-1-1}
@@ -41,7 +43,8 @@ Coding però non è solo una pratica didattica suggerita o raccomandata, è anch
 
 Questo tema è legato alla presenza di attori privati sul campo. [Code.org](http://code.org/), ma anche il progetto [Programma il Futuro](http://programmailfuturo.it/), hanno degli sponsor o dei partner; e oltre a questi, diverse altre aziende si sono proposte con ambienti online, strumenti mobile, seminari, campi estivi. Vorremmo vederci chiaro: che garanzie vengono date sull'imparzialità di queste meritorie iniziative? Tante volte si è visto il fenomeno dell'imprinting digitale: se ad un novizio viene presentato un ambiente, poi quello sarà il suo ambiente d'elezione in futuro. Significa che stiamo creando un mercato?
 
-![example image](/images/film-3.jpg "An exemplary image"){: .img-full}
+![Hiroshima Mon Amour](/images/film-3.jpg "Hiroshima Mon Amour")
+{: .img-full}
 
 ## 5. Un po' di etica non guasta 
 {: .heading-2}
@@ -53,7 +56,8 @@ Spesso viene associato il pensiero computazionale al pensiero critico (ad esempi
 
 Un altro tema su cui ci piacerebbe che ci fosse più consapevolezza è quello dell'ambiente/linguaggio. Il coding è legato all'ambiente Scratch, che ha precise caratteristiche tecniche (ormai solo online, visuale, semplificato), e a Code.org, che ne ha altrettante pedagogiche (progressione per problemi di difficoltà crescente, autonomia, comunità on line). Pur riconoscendo a Scratch e a i suoi creatori mille qualità, perché questo plebiscito? Perché così pochi cercano delle alternative? Ce ne sono ormai centinaia. Perché non confrontarle e scegliere quella più opportuna in funzioni del contesto, del livello, degli obiettivi?
 
-![example image](/images/film-4.jpg "An exemplary image"){: .img-full}
+![Hiroshima Mon Amour](/images/film-4.jpg "Hiroshima Mon Amour")
+{: .img-full}
 
 ## 7. Linguaggio visuale o testuali?
 {: .heading-2}
@@ -66,4 +70,4 @@ Scratch è sinonimo di "linguaggio visuale", anche se di linguaggio visuale non 
 Infine, un tema scarsamente citato, ma che ci pare importante: quello del genere. Si è detto che il coding contribuisce a superare le differenze, perché anche le bambine (o le insegnanti?) possono programmare. Questa dichiarazione si poggia su una delle motivazioni principali di progetti come Code.org, ovvero superare la tradizionale scarsità di donne negli ambiti lavorativi STEM, e in particolare in campo informatico. Ma siamo sicuri che la maniera di insegnare il coding sia così indifferente al genere? La competizione, il superamento di problemi di difficoltà crescente, sono stimoli che hanno la stessa potenza per ragazze e ragazzi? L'identificazione con un robot/avatar (il "gattino") non pone altri interrogativi?
 
 # _coding sì, ma consapevole_
-{: .heading-1}
+{: .heading-last}

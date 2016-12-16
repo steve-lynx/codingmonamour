@@ -5,6 +5,8 @@ APP_FOLDER = File.join(ROOT_FOLDER, 'application')
 HELPERS_FOLDER = File.join(APP_FOLDER, 'helpers')
 LIB_FOLDER = File.join(ROOT_FOLDER, 'lib')
 CONFIG_FOLDER = File.join(ROOT_FOLDER, 'config')
+DOC_FOLDER = File.join(ROOT_FOLDER, 'documents')
+PUB_FOLDER = File.join(ROOT_FOLDER, 'public')
   
 [  
   LIB_FOLDER, 
@@ -27,8 +29,8 @@ set :static, true
 set :root, ROOT_FOLDER
 set :application, APP_FOLDER
 set :libraries, LIB_FOLDER
-set :public_folder, Proc.new { File.join(root, "public") }
-set :views, Proc.new { File.join(root, "documents") }
+set :public_folder, PUB_FOLDER
+set :views, DOC_FOLDER
 
 set :metadatas, Proc.new { YAML.load_file(File.join(application, 'metadata.yml')).to_h  }
 set :doc_metadatas, Proc.new { |doc| YAML.load_file(File.join(views, doc)).to_h  }

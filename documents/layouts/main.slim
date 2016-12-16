@@ -17,18 +17,31 @@ html class="no-js" lang="#{m_string(:language, ',')}" dir="ltr"
   
   body
 
-    .jumbotron.head
-      img.jumbotron src="/images/jumbotron.jpg"
-      .container        
-        h1 #codingmonamour
+    .jumbotron.head      
+      img src="/images/jumbotron.jpg"
+      h1 #codingmonamour
 
+
+    .jumbotron.topbar
+      nav class="navbar navbar-static-top topbar"
+        .container-fluid
+          .navbar-header
+            button.button.navbar-toggle.collapsed.topmenu-button data-toggle="collapse" data-target="#topmenu" aria-expanded="false"
+              span class="sr-only">Toggle navigation</span>
+              span class="icon-bar"
+              span class="icon-bar"
+              span class="icon-bar"
+            a class="navbar-brand" href="#"
+              Brand
+          .collapse.navbar-collapse#topmenu
+            ==< top_menu('/') 
+   
     .container
       .row
         == markdown(content)
 
-    /.jumbotron
-      .container.footer
-        footer
+    /.jumbotron.foot
+      
 
 
 

@@ -43,4 +43,15 @@ module Helpers
       }).join(',')
   end
 
+  def top_menu(base, ext = :markdown)
+    docs = Dir[File.join(DOC_FOLDER, base, "*.#{ ext.to_s }")].sort
+    links = docs.reduce([]) { |acc, f|
+      path = f.scan( %r{#{DOC_FOLDER}(.*)\..*})[0][0]
+      name = File.basename(path).gsub(/\W/, ' ').squeeze      
+      acc << %(<li><a href="#{path}">#{name}</a></li>) unless name == 'index'
+      acc
+    }
+    %(<ul class="nav navbar-nav"><li><a class="nav-button" href="/">Home</a></li>#{ links.join("\n") }</ul>)
+  end
+
 end

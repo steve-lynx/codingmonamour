@@ -1,32 +1,31 @@
-# title
+# Coding Mon Amour!
+{: .heading-0}
 
-*aaaa*
+Già. Se ne parla oramai in tutte le lingue e in tutte le salse: sembra che il "*Coding* (il virgolettato è d'obbligo)" sia fortemente trasversale rispetto alle diverse discipline o ambiti disciplinari, in particolare nella Scuola Primaria.
 
-[www.pragmas.org](http://www.pragmas.org)
+In tal senso, assistiamo alla pubblicazione di esperienze, realizzazione di modelli che hanno per argomento articoli e aggettivi, mattoncini impilati per favorire la comprensione di come si calcola l'area di un quadrato.
 
-~~~ scala
-**
- * A person has a name and an age.
- */
-case class Person(name: String, age: Int)
+Nulla, ancora, sul fronte storico, geografico, insomma antropologico.
 
-abstract class Vertical extends CaseJeu
-case class Haut(a: Int) extends Vertical
-case class Bas(name: String, b: Double) extends Vertical
+Crediamo proprio, a questo punto, che sia doveroso chiarire quanto queste attività, del tutto prive di giustificazione metodologica, non siano riconducibili per forma e sostanza al concetto di trasversalità.
 
-sealed trait Ior[+A, +B]
-case class Left[A](a: A) extends Ior[A, Nothing]
-case class Right[B](b: B) extends Ior[Nothing, B]
-case class Both[A, B](a: A, b: B) extends Ior[A, B]
+Un apprendimento è *trasversale* quando chiama in causa due precisi paradigmi, ovvero la modalità multidisciplinare e interdisciplinare dell'intervento didattico.
 
-trait Functor[F[_]] {
-  def map[A, B](fa: F[A], f: A => B): F[B]
-}
+La prima attiene al coinvolgimento di diverse discipline nel trattare l'argomento prescelto.
 
-lazy val ns = for {
-  x <- 0 until 100
-  y <- 0 until 100
-} yield (x + y) * 33.33
+La seconda riguarda la possibilità di trattare l'argomento prescelto facendo richiamo a diversi suoi aspetti, riconducibili a diverse discipline.
 
+Può sembrare la stessa cosa, ma non è così: l'approccio interdisciplinare risponde ad una logica maggiormente vicina al paradigma costruttivista, favorisce l'interazione e la collaborazione nel definire i tratti distintivi che producono apprendimento. L'approccio multidisciplinare attiene maggiormente alla metodologia trasmissiva.
 
-~~~
+Ciò detto, non si riesce proprio a intuire alcun rapporto fra "*Coding* (o presunto tale)" e un approccio di tipo trasversale.
+
+O meglio, di trasversalità si può indubbiamente parlare, ma riferita alle strutture logiche e forme di pensiero, che dall'analisi di processi possono trarre giovamento.
+
+Ma di questo non vedo alcuna traccia in quello che, oramai, sta pervadendo e animando di sacro fuoco "codico" tante/i Docenti.
+
+Il problema più grave è che una tale tendenza sta contaminando la didattica, e che a farne le spese sono, in ultim analisi, Allievi in una età in cui le modalità con cui apprendere vengono modellate e consolidate.
+
+Con buona pace della deontologia professionale, dei principi epistemologici di base e, perché no, della Pedagogia.
+
+![Hiroshima Mon Amour](/images/film-11.jpg "Hiroshima Mon Amour")
+{: .img-full}
