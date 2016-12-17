@@ -1,12 +1,15 @@
 doctype html
-html class="no-js" lang="#{m_string(:language, ',')}" dir="ltr"
+html class="no-js" lang="#{m_string(:language, :sep => ',')}" dir="ltr"
 
   head
-    title= m_string(:title, ' - ')
+    title= m_string(:title, :sep => ' - ')
     ==> m_metas
     meta name="keywords" content="#{m_keywords}"
-    meta name="description" content="#{m_string(:description, ',')}"
-    meta name="author" content="#{m_string(:author, ',')}"
+    meta name="description" content="#{m_string(:description, :sep => ',')}"
+    meta name="author" content="#{m_string(:author, :sep => ',')}"
+    meta name="editor" content="#{m_string(:editor, :sep => ',')}"
+    meta name="revision" content="#{m_string(:revision, :sep => ',')}"
+    meta name="date" content="#{m_date(:date, :sep => ',')}"
     meta charset="utf-8"
     meta http-equiv="x-ua-compatible" content="ie=edge"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
@@ -36,9 +39,15 @@ html class="no-js" lang="#{m_string(:language, ',')}" dir="ltr"
           .collapse.navbar-collapse#topmenu
             ==< top_menu('/') 
    
-    .container
+    .container.document
       .row
         == markdown(content)
+      .row.metadatas
+        ol.breadcrumb.metadatas
+          li ==< "<b>author: </b>#{m_string(:author, :scope => :document)}"
+          li ==< "<b>editor: </b>#{m_string(:editor, :scope => :document)}"
+          li ==< "<b>revision: </b>#{m_string(:revision, :scope => :document)}"
+          li ==< "<b>date: </b>#{m_date(:date, :scope => :document)}"
 
     /.jumbotron.foot
       

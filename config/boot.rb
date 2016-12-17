@@ -15,6 +15,7 @@ PUB_FOLDER = File.join(ROOT_FOLDER, 'public')
 ].each {|path|
   $LOAD_PATH << path unless $LOAD_PATH.include?(path)
 }
+Dir[File.join(LIB_FOLDER, '*.rb')].each { |h| require(h) }
 
 require 'sinatra'
 require 'sinatra/base'

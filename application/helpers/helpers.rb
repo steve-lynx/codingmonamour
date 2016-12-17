@@ -2,30 +2,68 @@ module Helpers
 
   require 'yaml'
 
-  def m_value(context, key, default)
-    begin
-      result = @metadatas[context.to_s][key.to_s]      
-      result.nil? ? default : result
-    rescue
-      default
+
+
+  def m_values_or_default(key, options = {})
+    options.reverse_merge! ({
+      :def => '',
+      :scope => :all
+    })
+    def m_value(context, key, default)
+      begin
+        result = @metadatas[context.to_s][key.to_s]      
+        result.nil? ? default : result
+      rescue
+        default
+      end
+    end
+    if options[:scope] == :all
+      [m_value(:application, key, options[:def]), m_value(:document, key, options[:def])]
+    else
+      [m_value(options[:scope], key, options[:def]), options[:def]]
     end
   end
 
-  def m_string(key, sep = ' ')
-    val1 = m_value(:application, key.to_s, '').to_s
-    val2 = m_value(:document, key.to_s, '').to_s
-    "#{ val1 }#{ val2.empty? ? '' : sep + val2}"
+  def m_string(key, options = {})
+    options.reverse_merge! ({
+      :sep => ' ',
+      :scope => :all
+    })
+    val1, val2 = m_values_or_default(key, :def => '', :scope => options[:scope])
+    "#{val1}#{val1.empty? ? '' : options[:sep].to_s}#{val2}"
   end
 
-  def m_array(key)
-    val1 = m_value(:application, key, [])
-    val2 = m_value(:document, key, [])
-    val1.size >= val2.size ? [val1, val2] : [val2, val1]
+  def m_date(key, options = {})
+    options.reverse_merge! ({
+      :sep => ' ',
+      :scope => :all,
+      :format => '%d-%m-%Y'
+    })
+    val1, val2 = m_values_or_default(key, :def => nil, :scope => options[:scope])
+    val1 = val1.nil? ? '' : val1.strftime(options[:format])
+    val2 = val2.nil? ? '' : val2.strftime(options[:format])
+    "#{val1}#{val1.empty? ? '' : options[:sep].to_s}#{val2}"
   end
 
-  def m_metas
-    list1, list2 = m_array(:metas)
-    list1.concat(list2)
+  def m_array(key, options = {})
+    options.reverse_merge! ({
+      :scope => :all,
+      :sorted => true
+    })
+    val1, val2 = m_values_or_default(key, :def => [], :scope => options[:scope])   
+    if options[:sorted]
+      val1.size >= val2.size ? [val1, val2] : [val2, val1]
+    else
+      [val1, val2]
+    end
+  end
+
+  def m_metas(options = {})
+    options.reverse_merge! ({
+      :scope => :all
+    })
+    list1, list2 = m_array(:metas, :scope => options[:scope])    
+    list1.concat(list2)    
     (list1.reduce(list2) { |acc, v|
        kv = v.split('=')
        acc << %(<meta name="#{ kv[0].to_s.strip }" content="#{kv[1].to_s.strip }">)

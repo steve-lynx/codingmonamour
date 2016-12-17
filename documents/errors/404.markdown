@@ -1,1 +1,4 @@
-*404*
+# Ci dispiace
+{: .heading-0}
+
+La pagina che si sta cercando non esiste (*errore: 404*).
