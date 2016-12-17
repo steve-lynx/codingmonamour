@@ -21,9 +21,9 @@ Ciò detto, non si riesce proprio a intuire alcun rapporto fra "*Coding* (o pres
 
 O meglio, di trasversalità si può indubbiamente parlare, ma riferita alle strutture logiche e forme di pensiero, che dall'analisi di processi possono trarre giovamento.
 
-Ma di questo non vedo alcuna traccia in quello che, oramai, sta pervadendo e animando di sacro fuoco "codico" tante/i Docenti.
+Ma di questo non si vede traccia in quello che, oramai, sta pervadendo e animando di sacro fuoco "codico" tante/i Docenti.
 
-Il problema più grave è che una tale tendenza sta contaminando la didattica, e che a farne le spese sono, in ultim analisi, Allievi in una età in cui le modalità con cui apprendere vengono modellate e consolidate.
+Il problema più grave è che una tale tendenza sta contaminando la didattica, e che a farne le spese sono, in ultima analisi, Allievi in una età in cui le modalità con cui apprendere vengono modellate e consolidate.
 
 Con buona pace della deontologia professionale, dei principi epistemologici di base e, perché no, della Pedagogia.
 
