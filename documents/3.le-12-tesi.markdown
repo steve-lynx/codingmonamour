@@ -9,7 +9,7 @@ Il pensiero computazionale, nella definizione più condivisa, è di tipo *eurist
 ![Hiroshima Mon Amour](/images/film-8.jpg "Hiroshima Mon Amour")
 {: .img-full}
  
-# 2. PRIORITA
+# 2. PRIORITA'
 {: .heading-2}
 
 ## Insegnare il pensiero computazionale ai bambini non ha una priorità più alta di altri obiettivi trasversali
@@ -79,7 +79,7 @@ Il ‘coding’, anche nella versione minimale e introduttiva che viene proposta
 {: .img-full}
 
 # 9. PROBLEMI
-{: .heading-1}
+{: .heading-2}
 
 ## Risolvere in sequenza problemi sempre più difficili non è l'unica maniera di imparare a programmare e non necessariamente la migliore
 {: .heading-2-top}
@@ -104,6 +104,13 @@ Proprio perché il *coding* è parte di un processo di apprendimento di una prat
 {: .heading-2-top} 
 
 Ogni innovazione deve avvenire nel rispetto del diritto dello studente a fruire di opportunità di apprendimento di comprovata efficacia; ogni innovazione deve avvenire nel rispetto del diritto dell'insegnante a ricevere specifica ed efficace formazione, nella consapevolezza del significato, dei limiti e dei contesti d'uso di tale innovazione. Efficacia che significa prima di tutto potenziamento della capacità di giudizio, tanto dello studente che del docente.
+
+# 12. RELATIVITA'
+{: .heading-2}
+
+## Nessuna strategia didattica ha valore assoluto
+
+Non ci sono strategie didattiche definitive e assolute, soprattutto se sono decontestualizzate, dogmatiche e svincolate da controlli aperti.
 
 ![Hiroshima Mon Amour](/images/film-12.jpg "Hiroshima Mon Amour")
 {: .img-full}

@@ -1,4 +1,4 @@
-# Le 25 domande sul coding, ovvero le risposte a caldo.
+# Le 25 domande sul coding (con qualche risposta a caldo)
 {: .heading-0}
 
 ## 1. Pensiero computazionale e pensiero logico/matematico sono sinonimi? se no, quali sono le differenze?

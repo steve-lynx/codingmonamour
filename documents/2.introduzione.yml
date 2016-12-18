@@ -1,8 +1,10 @@
 ---
 document:
-  title: Le 25 domande sul coding, ovvero le risposte a caldo
+  title: Introduzione
   language: it
   keywords: programming, coding, Scratch
   description: programming and coding
-  author: Ghisalberti, Penge, d'Ambrosio, Francesca
+  author: codingmonamour
   date: 2016-12-16
+  metas:
+    - aaa=bbb

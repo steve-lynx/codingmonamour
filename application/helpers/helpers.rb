@@ -82,14 +82,21 @@ module Helpers
   end
 
   def top_menu(base, ext = :markdown)
-    docs = Dir[File.join(DOC_FOLDER, base, "*.#{ ext.to_s }")].sort
+    rev_root = File.join(DOC_FOLDER, base)
+    docs = Dir[File.join(rev_root, "*.#{ ext.to_s }")].natural_sort
     links = docs.reduce([]) { |acc, f|
-      path = f.scan( %r{#{DOC_FOLDER}(.*)\..*})[0][0]
-      name = File.basename(path).gsub(/\W/, ' ').squeeze(' ')      
-      acc << %(<li><a href="#{path}">#{name}</a></li>) unless name == 'index'
-      acc
+      path = f.scan(%r{\/.*\.(.*)\..*})[0][0]
+      index = @metadatas.fetch2(['application', 'home', 'document'], 'index')
+      name = path.to_s.gsub(/\W/, ' ').squeeze(' ')
+      acc << %(<li><a href="#{File.join(base, path.to_s)}">#{name}</a></li>) unless path.match(%r{\/#{index}})
+      acc.compact
     }
-    %(<ul class="nav navbar-nav"><li><a class="nav-button" href="/">Home</a></li>#{ links.join("\n") }</ul>)
+    home = @metadatas.fetch2(['application', 'home', 'name'], 'Home')
+    postlinks = @metadatas.fetch2(['document', 'links'], []).reduce([]) { |acc, l|
+      part = l.split('=')
+      acc << %(<li><a class="nav-button" href="#{part[1]}">#{part[0]}</a></li>)
+    }
+    %(<ul class="nav navbar-nav"><li><a class="nav-button" href="/">#{home}</a></li>#{ links.join("\n") }#{ postlinks.join("\n") }</ul>)
   end
 
 end

@@ -4,3 +4,6 @@ application:
   language: it
   keywords: programming, coding
   date: 2016-12-10
+  home: 
+    name: 'Home'
+    document: index

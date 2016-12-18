@@ -37,7 +37,7 @@ html class="no-js" lang="#{m_string(:language, :sep => ',')}" dir="ltr"
             a class="navbar-brand" href="#"
               Brand
           .collapse.navbar-collapse#topmenu
-            ==< top_menu('/') 
+            ==< top_menu(@request_root.to_s) 
    
     .container.document
       .row
