@@ -56,7 +56,7 @@ Ci sono decine o centinaia di ambienti e linguaggi; la scelta dovrebbe tenere co
 
 La somiglianza dell’ambiente di apprendimento del *coding* con i videogiochi e gli ambienti ludici in generale (tramite un’interfaccia piena di colori, pupazzi, animazioni) rischia di spostare l’attenzione sugli aspetti motivazionali iniziali. Ma il piacere della costruzione, della scoperta, dell’invenzione (che dovrebbero essere eventi tipici del ‘coding’) che sono motori potentissimi dell’apprendimento, non hanno a che fare con i dettagli dell’interfaccia, quanto con il processo. D’altra parte, interfacce molto caratterizzate fissano l’età dell’utente-target in modo molto preciso.
  
-![Hiroshima Mon Amour](/images/film-10.jpg "Hiroshima Mon Amour")
+![Hiroshima Mon Amour](/images/film-20.jpg "Hiroshima Mon Amour")
 {: .img-full}
 
 # 7. VISUALE
