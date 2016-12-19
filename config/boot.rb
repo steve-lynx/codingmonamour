@@ -6,6 +6,8 @@
 ## Licence: Apache License Version 2.0, http://www.apache.org/licenses/
 ################################################################################
 
+RACK_ENV = ENV['RACK_ENV'] ||= 'development' unless defined?(RACK_ENV)
+
 ROOT_FOLDER = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 APP_FOLDER = File.join(ROOT_FOLDER, 'application')
 HELPERS_FOLDER = File.join(APP_FOLDER, 'helpers')
@@ -30,7 +32,7 @@ require 'yaml'
 
 class MainApplication < Sinatra::Base
 
-set :environment, :development
+set :environment, RACK_ENV
 set :logging, true
 set :static, true
 set :root, ROOT_FOLDER
