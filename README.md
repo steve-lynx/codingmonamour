@@ -1,6 +1,7 @@
 # codingmonamour.org
 
 *codingmonamour* è una applicazione scritta in [**Ruby**](http://www.ruby-lang.org/it/) usando il microframework [*Sinatra*](http://www.sinatrarb.com/). Per rendere le cose più semplici possibile e senza fornirla di un *back-end* per la scrittura dei documenti si è scelto di automatizzare alcuni meccanismi.
+Download github repository: [master](https://github.com/minimalprocedure/codingmonamour/archive/master.zip)
 
 ## documenti
 
@@ -43,6 +44,24 @@ Il file di metadati è opzionale ma nel caso verà unito a quello dell'applicazi
 
 La chiave *metas*, se presente, contribuirà a formare dei *tag* *meta* (oltre quelli predefiniti nel layout) nella intestazione della pagina (utile per eventualmente creae dei *meta* per vari social).
 
+Nei metadati del documento si può usare una chiave *load* con il percorso di un file relativo alla radice della applicazione, in questo caso il documento caricato sarà quello indicato. Se per esempio abbiamo nell cartella *help* un file *index.yml* in questo modo:
+
+~~~
+---
+document:
+  title: Help
+  language: it
+  keywords: programming, coding, Scratch
+  description: programming and coding
+  author: ghisalberti
+  date: 2016-12-18
+  load: README.md
+~~~
+
+chiamando *http://dominio.com/help* verrà caricato il file README.md posizionato sulla radice della applicazione.
+
+Per quello che riguarda i metadati della applicazione:
+
 ~~~
 ---
 application:
@@ -54,7 +73,8 @@ application:
     name: 'Home'
     document: index
 ~~~
-La struttura è la stessa a parte la chiave *home* che viene utilizzata per definire il nome che verrà usato per il file predefinito di radice ed il nome del file.
+
+la struttura è la stessa a parte la chiave *home* che viene utilizzata per definire il nome che verrà usato per il file predefinito di radice ed il nome del file.
 Chiamando per esempio *http://dominio.com/test* il file caricato sarà in questo caso: *index.markdown*.
 
 ### percorsi
@@ -84,6 +104,10 @@ Il menù sulla radice del sito web, sarà: *Home, chi siamo, dove andiamo*; ment
 ## layout principale
 
 Il layout delle pagine è un file in [Slim](http://slim-lang.com/) e risiede nella cartella *documents/layouts*. Modificatelo solo se conoscete lo Slim.
+
+## Gli stili css
+
+Ci sono due stili css, uno (*application.css*) della applicazione (statico) nella cartella *public/stylesheets* ed uno (documents.scss) dei documenti nella cartella *documents*. Lo stile dei documenti è in formato [SCSS](http://sass-lang.com/).
 
 ## file pubblici
 

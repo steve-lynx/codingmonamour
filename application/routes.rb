@@ -1,4 +1,10 @@
 # encoding: utf-8
+################################################################################
+## Initial developer: Massimo Maria Ghisalberti <massimo.ghisalberti@gmail.org>
+## Date: 2016-12-18
+## Company: Pragmas <contact.info@pragmas.org>
+## Licence: Apache License Version 2.0, http://www.apache.org/licenses/
+################################################################################
 
 class MainApplication < Sinatra::Base
   
@@ -27,6 +33,10 @@ class MainApplication < Sinatra::Base
         [req_path, File.join(settings.views, "#{req_path}.yml")]
       end
     @metadatas = settings.metadatas.merge( File.exist?(@request_meta) ? YAML.load_file(@request_meta).to_h : {})
+
+    unless @metadatas.fetch2(['document','load'], nil).nil?
+      File.open(File.join(ROOT_FOLDER, @metadatas['document']['load']), 'r') { |f| @document_source = f.read }
+    end
   end
 
   get '/' do
@@ -34,9 +44,13 @@ class MainApplication < Sinatra::Base
     slim(:'layouts/main' , :locals => { :content => document, :metadatas => @metadatas})
   end
 
+  get '/stylesheets/documents.css' do
+    scss :'stylesheets/documents'
+  end
+
   get '*' do
     begin
-      slim(:'layouts/main' , :locals => { :content => @request_path.to_sym, :metadatas => @metadatas })
+      slim(:'layouts/main' , :locals => { :content => (@document_source.nil? ? @request_path.to_sym : @document_source), :metadatas => @metadatas })
     rescue
       halt 404, slim(:'layouts/main' , :locals => { :content => :'errors/404', :metadatas => @metadatas })
     end

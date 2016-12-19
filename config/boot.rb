@@ -1,4 +1,10 @@
 # encoding: utf-8
+################################################################################
+## Initial developer: Massimo Maria Ghisalberti <massimo.ghisalberti@gmail.org>
+## Date: 2016-12-18
+## Company: Pragmas <contact.info@pragmas.org>
+## Licence: Apache License Version 2.0, http://www.apache.org/licenses/
+################################################################################
 
 ROOT_FOLDER = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 APP_FOLDER = File.join(ROOT_FOLDER, 'application')
@@ -38,9 +44,10 @@ set :doc_metadatas, Proc.new { |doc| YAML.load_file(File.join(views, doc)).to_h 
 
 set :server, %w[thin webrick]
 set :bind, '0.0.0.0'
-set :port, 3000
+set :port, (settings.development? ? 3000 : 8080)
 
-set :slim, :pretty => true
+set :slim, :pretty => settings.development?
+set :scss, :style => (settings.development? ? :nested : :compressed)
 #set :slim, :disable_escape => true
 set :slim, :format => :html
 set :markdown, :layout_options => { :views => File.join(settings.views, "layouts") }
