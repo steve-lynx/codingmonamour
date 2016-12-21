@@ -111,6 +111,7 @@ nav.topbar {
 
 .container {
     background-color: #ffffff;
+    padding: 0em 2em;
 }
 
 .container.document {
@@ -119,7 +120,8 @@ nav.topbar {
     width: 64%;
     border-left: 1px solid #B0518D;
     border-right: 1px solid #B0518D;
-    border-bottom: 1px solid #B0518D;    
+    border-bottom: 1px solid #B0518D;
+    overflow-x: hidden;
 }
 
 pre {

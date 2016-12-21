@@ -41,6 +41,7 @@ class String
       1.upto(len) { |i| rndstring << chars[rand(chars.size-1)] }
       rndstring
     end
+    alias :random :random_string
   end
 
 end

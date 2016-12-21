@@ -9,6 +9,7 @@
 class MainApplication < Sinatra::Base
   
   before do
+    
     absolute_path = File.join(settings.views, request.path)
     rev_root = File.dirname(absolute_path)
     index = settings.metadatas.fetch2(['application','home','document'], 'index').to_sym  
@@ -37,22 +38,25 @@ class MainApplication < Sinatra::Base
     unless @metadatas.fetch2(['document','load'], nil).nil?
       File.open(File.join(ROOT_FOLDER, @metadatas['document']['load']), 'r') { |f| @document_source = f.read }
     end
-  end
+  end  
+
 
   get '/' do
     document = settings.metadatas.fetch2(['application','home','document'], 'index').to_sym 
-    slim(:'layouts/main' , :locals => { :content => document, :metadatas => @metadatas})
+    slim(:'layouts/main' , :locals => { :content => markdown(document), :metadatas => @metadatas})
   end
 
   get '/stylesheets/documents.css' do
-    scss :'stylesheets/documents'
+    content_type 'text/css'
+    scss(:'stylesheets/documents')
   end
 
-  get '*' do
+  get '*' do  
+    layout = :'layouts/main'
     begin
-      slim(:'layouts/main' , :locals => { :content => (@document_source.nil? ? @request_path.to_sym : @document_source), :metadatas => @metadatas })
+      slim(layout, :locals => { :content => markdown(@document_source.nil? ? @request_path.to_sym : @document_source), :metadatas => @metadatas })
     rescue
-      halt 404, slim(:'layouts/main' , :locals => { :content => :'errors/404', :metadatas => @metadatas })
+      halt 404, slim(layout, :locals => { :content => markdown(:'errors/404'), :metadatas => @metadatas })
     end
   end
   

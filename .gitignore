@@ -11,6 +11,7 @@
 /tmp/
 
 .sass-cache
+sass-cache
 *_flymake.css
 
 # Used by dotenv library to load environment variables.

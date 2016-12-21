@@ -1,8 +1,9 @@
 doctype html
-html class="no-js" lang="#{m_string(:language, :sep => ',')}" dir="ltr"
+html class="no-js" lang="#{m_string(:language, :sep => ',')}" dir="ltr" 
 
   head
     title= m_string(:title, :sep => ' - ')
+    link rel="icon" href="/images/favicon.png"
     ==> m_metas
     meta name="keywords" content="#{m_keywords}"
     meta name="description" content="#{m_string(:description, :sep => ',')}"
@@ -10,14 +11,16 @@ html class="no-js" lang="#{m_string(:language, :sep => ',')}" dir="ltr"
     meta name="editor" content="#{m_string(:editor, :sep => ',')}"
     meta name="revision" content="#{m_string(:revision, :sep => ',')}"
     meta name="date" content="#{m_date(:date, :sep => ',')}"
+    meta name="version" content="#{m_string(:version, :sep => ',')}"
     meta charset="utf-8"
+    meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8"
     meta http-equiv="x-ua-compatible" content="ie=edge"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     link rel="stylesheet" href="/stylesheets/bootstrap.css"
     link rel="stylesheet" href="/stylesheets/bootstrap-theme.css"
     link rel="stylesheet" href="/javascripts/highlight/styles/ocean.css"    
     link rel="stylesheet" href="/stylesheets/application.css"
-    link rel="stylesheet" href="/stylesheets/documents.css"
+    link rel="stylesheet" href="/stylesheets/documents.css?#{String.random(12)}"
   
   body
 
@@ -31,18 +34,16 @@ html class="no-js" lang="#{m_string(:language, :sep => ',')}" dir="ltr"
         .container-fluid
           .navbar-header
             button.button.navbar-toggle.collapsed.topmenu-button data-toggle="collapse" data-target="#topmenu" aria-expanded="false"
-              span class="sr-only">Toggle navigation</span>
+              span class="sr-only"
               span class="icon-bar"
               span class="icon-bar"
               span class="icon-bar"
-            a class="navbar-brand" href="#"
-              Brand
           .collapse.navbar-collapse#topmenu
             ==< top_menu(@request_root.to_s) 
    
     .container.document
       .row
-        == markdown(content)
+        == content
       .row.metadatas
         ol.breadcrumb.metadatas
           li ==< "<b>author: </b>#{m_string(:author, :scope => :document)}"
