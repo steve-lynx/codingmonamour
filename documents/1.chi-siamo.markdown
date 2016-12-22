@@ -1,11 +1,14 @@
 # Chi siamo
 {: .heading-0}
 
-Siamo un gruppo eterogeneo, interdisciplinare, con differenti professionalità, competenze: insegnanti, formatori, ricercatori, informatici (ma anche genitori)…. Ci siamo incontrati e riconosciuti sui Social Network, dove condividevamo soprattutto un fastidio il modo corrente di intendere il "coding" ma anche, più in generale, per la attuale politica educativa del “digitale” per la scuola. Un fastidio che spesso ci ha portato ad esprimerci contro e, va detto, ad attirarci strali di ogni genere: siete negativi, siete eccessivi, siete a priori contro il fare, siete contro l'allegria e l'entusiasmo. Sono anche questi commenti che ci hanno spinti a mettere in comune idee ed energie e a cercare di costruire una proposta alternativa pubblica.
+Siamo un gruppo eterogeneo e interdisciplinare, con differenti professionalità e competenze: insegnanti, formatori, ricercatori, informatici ed anche genitori. Ci siamo incontrati e riconosciuti sui Social Network dove condividevamo soprattutto un fastidio per il modo corrente di intendere il *coding* ma anche e più in generale, per la attuale politica educativa del *digitale* nella la scuola. Un fastidio che spesso ci ha portato ad esprimerci contro e, va detto, ad attirarci strali di ogni genere: dal *siete negativi* al *siete eccessivi e siete a priori contro il fare, siete contro l'allegria e l'entusiasmo*. Sono anche questi commenti che ci hanno spinti a mettere in comune idee ed energie ed a cercare di costruire una proposta alternativa pubblica.
 
-Non ci sentiamo apocalittici, e non vogliamo essere semplicemente “contro”: contro il digitale, contro la programmazione, contro la robotica educativa, contro l'innovazione. Ognuno di noi ha perso parte del proprio tempo a ragionare e discutere perché a queste cose ci tiene, è stato coinvolto a qualche titolo, ha fatto delle esperienze dirette, ha letto (tanto) e scritto (poco).
+Non ci sentiamo apocalittici e non vogliamo essere semplicemente *contro*: contro il digitale, contro la programmazione, contro la robotica educativa, contro l'innovazione; quanto *contro* il come tutte queste attività vengano promosse ed attuate senza spunti di riflessione. Ognuno di noi ha perso parte del proprio tempo a ragionare e discutere perché a queste cose ci tiene, è stato coinvolto a qualche titolo ed ha fatto delle esperienze dirette, ha letto (tanto) e scritto (ancora poco).
+
+Vorremmo che la nostra azione fosse **culturale** in prima istanza, ma anche **tecnica** e **pedagogica** perché la **scuola è un bene ed una risorsa per tutti**.
 
 + [Alfonso d'Ambrosio]() (*Insegnante Secondaria di secondo grado*)
++ [Andreas Robert Formiconi](https://iamarf.org) (*Professore all'Università di Firenze*)
 + [Antonella Pontonio]() (*Insegnante Primaria*)
 + [Bruno Santoro]() (*Insegnante Secondaria di secondo grado*)
 + [Elena Marangoni]() (*Insegnante Primaria*)
@@ -24,7 +27,7 @@ Non ci sentiamo apocalittici, e non vogliamo essere semplicemente “contro”: 
 + [Sabina Tartaglia]() (*Insegnante*)
 + [Stefano Penge](http://steve.lynxlab.com/) (*Architetto software, insegnante e ricercatore con esperienza in sistemi di e-learning open-source*)
 + [Vicenzina Pace]() (*Insegnante*)
-+ [Walter Vannini]() (*Consulente informatico specializzato in data-driven business*)
++ [Walter Vannini](http://www.mind-spa.it) (*Consulente informatico specializzato in data-driven business*)
 {: .no-bullet}
 
 ![Hiroshima Mon Amour](/images/film-2.jpg "Hiroshima Mon Amour")
