@@ -109,6 +109,7 @@ Ogni innovazione deve avvenire nel rispetto del **diritto dello studente** a fru
 {: .heading-2}
 
 ## Nessuna strategia didattica ha valore assoluto
+{: .heading-2-top} 
 
 Non ci sono strategie didattiche definitive e assolute e soprattutto se sono decontestualizzate, dogmatiche e svincolate da controlli aperti.
 
