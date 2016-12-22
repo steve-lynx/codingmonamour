@@ -1,11 +1,11 @@
 # Perché il coding
 {: .heading-0}
 
-Ci concentriamo sul coding perché ha assunto tutti i caratteri della moda: si segue, non si discute; ci si mostra, si fa a gara. E già su questo occorrerebbe riflettere: perché questo grande successo? In precedenza, i tentativi di portare le tecnologie digitali a scuola (piani e progetti ministeriali a partire dagli anni ottanta, lavoro quotidiano di associazioni e enti di formazione, sperimentazioni autarchiche) non hanno avuto questa risonanza e non sono mai riusciti a imporsi come un valore anche affettivo, estetico. Quindi: quali sono le caratteristiche che differenziano il coding?
+Ci concentriamo sul coding perché ha assunto tutti i caratteri della moda: si segue, non si discute; ci si mostra e si fa a gara. Già su questo occorrerebbe riflettere: perché questo grande successo? In precedenza quasi tutti i tentativi di portare le tecnologie digitali a scuola (*piani e progetti ministeriali a partire dagli anni ottanta, lavoro quotidiano di associazioni e enti di formazione, sperimentazioni autarchiche*) non hanno avuto questa risonanza e non sono mai riusciti a imporsi come un valore anche affettivo, estetico. Quindi, quali sono le caratteristiche che differenziano il *coding*?
 
-Perché abbiamo scelto di concentrarci almeno inizialmente solo sul coding? Parte della nostra critica deriva proprio dal fatto che pensiamo che sia necessario immergere il coding in una visione più ampia del digitale per la didattica. Ma in questo momento l'attenzione anche mediatica sul coding è un'occasione per riflettere tutti insieme su quello che il coding implica.
+Perché abbiamo scelto di concentrarci almeno inizialmente solo sul *coding*? Parte della nostra critica deriva proprio dal fatto che pensiamo che sia necessario immergerlo in una visione più ampia del digitale per la didattica; ma in questo momento l'attenzione anche mediatica sul *coding* è un'occasione per riflettere tutti insieme su quello che implica.
 
-La critica è facile, l'arte è difficile. Lo sappiamo: per questo, oltre ad un'analisi della proposta del coding sullo sfondo della situazione Italiana, vorremmo fare anche una proposta articolata prendendo in considerazione le differenti prospettive: tecniche, pedagogiche, etiche, economiche.
+La critica è facile mentre l'arte è difficile e questo lo sappiamo, per cui oltre ad un'analisi della proposta del *coding* sullo sfondo della situazione italiana, vorremmo fare anche una proposta articolata prendendo in considerazione le differenti prospettive: *tecniche*, *pedagogiche*, *etiche* ed *economiche*.
 
 ## Cosa trovate qui
 {: .heading-2} 
