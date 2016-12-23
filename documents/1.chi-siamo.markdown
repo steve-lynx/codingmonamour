@@ -12,7 +12,7 @@ Vorremmo che la nostra azione fosse **culturale** in prima istanza, ma anche **t
 + [Antonella Pontonio]() (*Insegnante Primaria*)
 + [Bruno Santoro]() (*Insegnante Secondaria di secondo grado*)
 + [Elena Marangoni]() (*Insegnante Primaria*)
-+ [Fulvia Carbonera]() (*Insegnante Secondaria secondo grado*)
++ [Fulvia Carbonera]() (*Insegnante Secondaria di secondo grado*)
 + [Giampiero Monaca]() (*Insegnante Primaria*)
 + [Gianni Marconato](http://www.giannimarconato.it) (*Formatore e Learning Environment Architect*)
 + [Giuliana Bagnoli]() (*Insegnante Secondaria di secondo grado*)
@@ -26,10 +26,13 @@ Vorremmo che la nostra azione fosse **culturale** in prima istanza, ma anche **t
 + [Nicolò Porta]() (*Insegnante*)
 + [Rodolfo Marchisio]() (*Ex insegnante secondaria, formatore*)
 + [Sabina Tartaglia]() (*Insegnante*)
++ [Saverio Faniglulio]() (*Insegnante Secondaria di primo grado*
 + [Stefano Penge](http://steve.lynxlab.com/) (*Architetto software, insegnante e ricercatore con esperienza in sistemi di e-learning open-source*)
 + [Vicenzina Pace]() (*Insegnante*)
 + [Walter Vannini](http://www.mind-spa.it) (*Consulente informatico specializzato in data-driven business*)
 {: .no-bullet}
+
+Chi volesse sottoscrivere questa iniziativa può mandare una email a [info@codingmonamour.org](mailto:info@codingmonamour.org?subject=[#codingmonamour:subscription:ok]) indicando il nome e la qualifica ed un eventuale url di un blog, social network o sito web.
 
 ![Hiroshima Mon Amour](/images/film-2.jpg "Hiroshima Mon Amour")
 {: .img-full}

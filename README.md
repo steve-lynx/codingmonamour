@@ -11,9 +11,14 @@ Ci sono molti editor specializzati e multipiattaforma:
 
 1. [WiterMonkey](http://writemonkey.com)
 2. [Haropad](http://pad.haroopress.com/user.html)
-3. [MarkPad](http://code52.org)
+3. [MarkPad](http://code52.org/DownmarkerWPF/)
 4. [MarkdownPad](http://www.markdownpad.com/)
-5. ...
+5. [ReText](https://github.com/retext-project/retext/wiki/Installing-ReText)
+6. [Dillinger](http://dillinger.io/)
+7. [iA](https://ia.net/writer)
+8. [78 Tools for Writing and Previewing Markdown](http://mashable.com/2013/06/24/markdown-tools/#s6x722wUFZqm)
+
+Un convertitore di documenti molto potente: [pandoc](http://pandoc.org/)
 
 Il markdown è elaborato da una libreria che si chiama [kramdown](https://kramdown.gettalong.org/) che pemette alcune estensioni come per esempio la possibilità di usare dei metadati interni per definire gli stili da applicare ai blocchi: [block attributes](https://kramdown.gettalong.org/quickref.html#block-attributes).
 
