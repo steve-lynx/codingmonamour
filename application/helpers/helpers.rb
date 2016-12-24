@@ -106,19 +106,19 @@ module Helpers
       path = f.scan(%r{\/.*\.(.*)\..*})[0][0]
       index = @metadatas.fetch2(['application', 'home', 'document'], 'index')
       name = path.to_s.gsub(/\W/, ' ').squeeze(' ')
-      acc << %(<li><a href="#{File.join(base, path.to_s)}">#{name}</a></li>) unless path.match(%r{\/#{index}})
+      acc << %(<li><a class="nav-button doc-link" href="#{File.join(base, path.to_s)}">#{name}</a></li>) unless path.match(%r{\/#{index}})
       acc.compact
     }
     home = @metadatas.fetch2(['application', 'home', 'name'], 'Home')
     postlinks = dirs.reduce([]) { |acc, l|
-      acc << %(<li><a class="nav-button" href="/#{l}">#{l}</a></li>)
+      acc << %(<li><a class="nav-button dir-link" href="/#{l}">#{l}</a></li>)
     }
     postlinks << @metadatas.fetch2(['document', 'links'], []).reduce([]) { |acc, l|
       part = l.split('=')
-      acc << %(<li><a class="nav-button" href="#{part[1]}">#{part[0]}</a></li>)
+      acc << %(<li><a class="nav-button doc-extra-link" href="#{part[1]}">#{part[0]}</a></li>)
     }
     postlinks.flatten!
-    %(<ul class="nav navbar-nav"><li><a class="nav-button" href="/">#{home}</a></li>#{ links.join("\n") }#{ postlinks.join("\n") }</ul>)
+    %(<ul class="nav navbar-nav top-navbar-links"><li><a class="nav-button home-link" href="/">#{home}</a></li>#{ links.join("\n") }#{ postlinks.join("\n") }</ul>)
   end
 
 end
