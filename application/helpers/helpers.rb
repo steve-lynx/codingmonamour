@@ -89,9 +89,19 @@ module Helpers
       }).join(',')
   end
 
-  def top_menu(base, ext = :markdown)
+  def find_docs_and_dirs(base, ext = :markdown)
+    ignore = ['errors','layouts','stylesheets','\.disabled$']
     rev_root = File.join(DOC_FOLDER, base)
+    
     docs = Dir[File.join(rev_root, "*.#{ ext.to_s }")].natural_sort
+    dirs = (Dir[File.join(rev_root, '*')].map { |d|
+              d.gsub(rev_root, '') if File.directory?(d) && !ignore.any? { |i| d.match(Regexp.new(i))}
+      }).compact.natural_sort
+    [docs, dirs]
+  end
+
+  def top_menu(base, ext = :markdown)
+    docs, dirs = find_docs_and_dirs(base, ext)
     links = docs.reduce([]) { |acc, f|
       path = f.scan(%r{\/.*\.(.*)\..*})[0][0]
       index = @metadatas.fetch2(['application', 'home', 'document'], 'index')
@@ -100,10 +110,14 @@ module Helpers
       acc.compact
     }
     home = @metadatas.fetch2(['application', 'home', 'name'], 'Home')
-    postlinks = @metadatas.fetch2(['document', 'links'], []).reduce([]) { |acc, l|
+    postlinks = dirs.reduce([]) { |acc, l|
+      acc << %(<li><a class="nav-button" href="/#{l}">#{l}</a></li>)
+    }
+    postlinks << @metadatas.fetch2(['document', 'links'], []).reduce([]) { |acc, l|
       part = l.split('=')
       acc << %(<li><a class="nav-button" href="#{part[1]}">#{part[0]}</a></li>)
     }
+    postlinks.flatten!
     %(<ul class="nav navbar-nav"><li><a class="nav-button" href="/">#{home}</a></li>#{ links.join("\n") }#{ postlinks.join("\n") }</ul>)
   end
 
