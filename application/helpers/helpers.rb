@@ -105,7 +105,7 @@ module Helpers
     links = docs.reduce([]) { |acc, f|
       path = f.scan(%r{\/.*\.(.*)\..*})[0][0]
       index = @metadatas.fetch2(['application', 'home', 'document'], 'index')
-      name = path.to_s.gsub(/\W/, ' ').squeeze(' ')
+      name = path.to_s.gsub(/\W|_/, ' ').squeeze(' ')
       acc << %(<li><a class="nav-button doc-link" href="#{File.join(base, path.to_s)}">#{name}</a></li>) unless path.match(%r{\/#{index}})
       acc.compact
     }
