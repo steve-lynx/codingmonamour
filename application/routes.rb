@@ -21,7 +21,8 @@ class MainApplication < Sinatra::Base
       else
         @request_root = File.dirname(request.path)
         Dir[File.join(rev_root, '*.markdown')].reduce([]) { |acc, d|
-          acc << d unless d.match(File.basename(request.path)).nil?
+          #acc << d unless d.match(File.basename(request.path)).nil?
+          acc << d unless d.gsub(DOC_FOLDER, '').match(File.basename(request.path)).nil?
           acc
         }
       end

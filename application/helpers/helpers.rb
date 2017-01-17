@@ -95,7 +95,8 @@ module Helpers
     
     docs = Dir[File.join(rev_root, "*.#{ ext.to_s }")].natural_sort
     dirs = (Dir[File.join(rev_root, '*')].map { |d|
-              d.gsub(rev_root, '') if File.directory?(d) && !ignore.any? { |i| d.match(Regexp.new(i))}
+              rev_root = File.join(DOC_FOLDER, '/')
+              d.gsub(rev_root, '') if (File.directory?(d) && !ignore.any? { |i| d.match(Regexp.new(i))})
       }).compact.natural_sort
     [docs, dirs]
   end
@@ -111,7 +112,7 @@ module Helpers
     }
     home = @metadatas.fetch2(['application', 'home', 'name'], 'Home')
     postlinks = dirs.reduce([]) { |acc, l|
-      acc << %(<li><a class="nav-button dir-link" href="/#{l}">#{l}</a></li>)
+      acc << %(<li><a class="nav-button dir-link" href="/#{l}">#{File.basename(l)}</a></li>)
     }
     postlinks << @metadatas.fetch2(['document', 'links'], []).reduce([]) { |acc, l|
       part = l.split('=')

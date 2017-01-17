@@ -1,10 +1,10 @@
 ---
 document:
-  title: Help
+  title: Risorse
   language: it
   keywords: programming, coding, Scratch
   description: programming and coding
-  author: ghisalberti
-  date: 2016-12-18
-  load: README.md
-
+  author: Ghisalberti
+  date: 2017-01-16
+  #links:
+  #  - risorse=/risorse
